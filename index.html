@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page details</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- zoom container start -->
+
+      <div class="xzoom-container" >
+<!-- the id pic -->
+        
+        <img src="./assets/1-min.jpg" class="xzoom" id="pic"
+        xoriginal="./assets/1.jpg" />
+
+        <div class="xzoom-thumbs" >
+
+          <a href="./assets/1.jpg" >
+            <img class="xzoom-gallery white" src="./assets/1-min.jpg" xpreview="./assets/1-min.jpg"  >
+          </a>
+
+          <a href="./assets/2.jpg">
+            <img class="xzoom-gallery" src="./assets/2-min.jpg" xpreview="./assets/2-min.jpg">
+          </a>
+
+          <a href="./assets/3.jpg">
+            <img class="xzoom-gallery" src="./assets/3-min.jpg" xpreview="./assets/3-min.jpg">
+          </a>
+
+          <a href="./assets/4.jpg">
+            <img class="xzoom-gallery" src="./assets/4-min.jpg" xpreview="./assets/4-min.jpg">
+          </a>
+
+
+        </div>
+      </div>
+
+
+      
+      <!-- zoom container end -->
+
+      <!-- description start -->
+
+      
+      <div class="description">
+        <h1>Woman's Red top</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          saepe amet ipsum ea excepturi tenetur reiciendis obcaecati quam qui
+          optio cumque ratione id vero molestiae nesciunt natus magni architecto
+          quos.
+        </p>
+        <span>$150</span>
+<div class="x"></div>
+        <div class="color-content">
+
+          <h2>Select Color</h2>
+
+
+                <button href="./assets/tshirt_white.png" class="color color-white ">
+                  <img class="xzoom-gallery active-color"  type="button"  onclick="white()" xpreview="./assets/tshirt_white.png">
+                </button>
+      
+                <button href="./assets/tshirt_black.png" class=" color color-black">
+                  <img class="xzoom-gallery "  type="button"  onclick="black()" xpreview="./assets/tshirt_black.png">
+                </button>
+      
+                <button href="./assets/tshirt_yellow.png" class="color color-yellow" >
+                  <img class="xzoom-gallery "  type="button" onclick="yellow()" xpreview="./assets/tshirt_yellow.png">
+                </button>
+      
+                <button href="./assets/tshirt_blue.png" class="color color-blue">
+                  <img class="xzoom-gallery "  type="button"   onclick="red()" xpreview="./assets/tshirt_blue.png">
+                </button>
+  
+
+      </div>
+
+
+        <div>
+          <button class="buy">Buy Now</button>
+          <button class="cart">Add To Cart</button>
+        </div>
+
+
+      <!-- description end-->
+    </div>
+
+    </div>
+
+
+
+
+    
+<!--     
+    <script>
+      var options = {
+        width:400,
+        height:250,
+        zoomWidth:500,
+        offset:{verticval:0, horizontal:10},
+        scale:1.5
+      }
+      new ImageZoom(document.getElementById('white'),options);
+    </script> -->
+
+
+
+
+    
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/zoom.js"></script> 
+    
+
+    
+    <script src="./js/script.js"></script>
+
+    <script>
+
+
+      function white(){
+
+        document.getElementById('pic').src='./assets/tshirt_white.png'
+      }
+
+      function black(){
+        document.getElementById('pic').src='./assets/tshirt_black.png'
+      }
+
+      function yellow(){
+        document.getElementById('pic').src='./assets/tshirt_yellow.png'
+      }
+
+      function blue(){
+        document.getElementById('pic').src='./assets/tshirt_blue.png'
+      }
+
+      function red(){
+        document.getElementById('pic').src='./assets/tshirt_red.png'
+      }
+
+
+    </script>
+
+  </body>
+</html>
+
+
+
+
